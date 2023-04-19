@@ -1,5 +1,5 @@
-import OnboardingScreen from "./screens/OnboardingScreen";
 import { useFonts } from "expo-font";
+import OnboardingScreen from "./src/screens/OnboardingScreen";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
