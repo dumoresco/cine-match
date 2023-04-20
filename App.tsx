@@ -1,5 +1,8 @@
 import { useFonts } from "expo-font";
-import OnboardingScreen from "./src/screens/OnboardingScreen";
+import OnboardingScreen from "./src/screens/OnBoarding";
+import { ThemeProvider } from "styled-components";
+import theme from "./src/global/theme";
+import Home from "./src/screens/Home";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -12,5 +15,9 @@ export default function App() {
   if (!fontsLoaded) {
     return null;
   }
-  return <OnboardingScreen />;
+  return (
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
+  );
 }

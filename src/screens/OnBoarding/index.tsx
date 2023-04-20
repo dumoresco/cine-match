@@ -1,11 +1,4 @@
-import {
-  Dimensions,
-  FlatList,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
-import { useRef, useState } from "react";
+import { Dimensions, FlatList, TouchableOpacity } from "react-native";
 
 import Icon from "react-native-vector-icons/FontAwesome5";
 
@@ -21,7 +14,7 @@ import {
   ButtonsContainer,
   ButtonText,
 } from "./styles";
-import { useOnboardingScreen } from "../hooks/useOnboardingScreen";
+import { useOnboardingScreen } from "../../hooks/useOnboardingScreen";
 
 interface ItemSlide {
   key: number;
