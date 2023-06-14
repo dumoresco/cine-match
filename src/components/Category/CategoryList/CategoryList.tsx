@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container } from "./styles";
-import CategoryItem from "../categoryItem/CategoryItem";
+import CategoryItem from "../CategoryItem/CategoryItem";
 import { FlatList } from "react-native";
 
 const CategoryList: React.FC = () => {

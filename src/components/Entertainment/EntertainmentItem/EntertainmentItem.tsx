@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, ItemImage, NotFound } from "./styles";
 import { ActivityIndicator, useWindowDimensions } from "react-native";
-import { Movie } from "../entertainmentList/EntertainmentList";
+import { Movie } from "../EntertainmentList/EntertainmentList";
 
 const EnterteinmentItem = ({ item, id }: { item: Movie; id: string }) => {
   const { width } = useWindowDimensions();
